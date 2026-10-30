@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#020617" />
+    <title>FocusForge</title>
+    <!--
+      The webfont is loaded non-blocking on purpose. A normal stylesheet link to
+      fonts.googleapis.com blocks the first paint on a network request, which on
+      a slow or offline connection stalls the block screen for as long as the
+      request takes. Swapping media from print to all after load keeps it out of
+      the critical path — text paints immediately in the fallback face.
+    -->
+    <link rel="stylesheet" media="print" onload="this.media='all'"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+  </head>
+  <body class="bg-dark-950 text-white font-sans">
+    <div id="root"></div>
+    <script type="module" src="/src/block-main.jsx"></script>
+  </body>
+</html>

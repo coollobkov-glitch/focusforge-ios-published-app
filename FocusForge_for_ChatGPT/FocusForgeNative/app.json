@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "FocusForge",
+    "slug": "focusforge",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#030712"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "org.focusforge.app",
+      "appleTeamId": "XKQ2SMQBHH",
+      "infoPlist": {
+        "NSFamilyControlsUsageDescription": "FocusForge uses Screen Time to help you block distracting apps and stay focused.",
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": [
+              "focusforge"
+            ]
+          }
+        ],
+        "LSApplicationQueriesSchemes": [
+          "instagram",
+          "tiktok",
+          "youtube",
+          "fb",
+          "twitter",
+          "snapchat"
+        ]
+      },
+      "buildNumber": "11"
+    },
+    "android": {
+      "package": "org.focusforge.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#030712",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "./plugins/withAppBlocker",
+      "./plugins/withScreenTime",
+      "./plugins/withNotificationHandler"
+    ]
+  }
+}
